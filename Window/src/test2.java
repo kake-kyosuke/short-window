@@ -1,4 +1,4 @@
-﻿import java.awt.Desktop;
+import java.awt.Desktop;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.net.URI;
@@ -7,11 +7,8 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
-class test extends JFrame {
-	  test(String title){
-		    ImageIcon icon = new ImageIcon("./src/img/icon.jpg");
-		    setIconImage(icon.getImage());
-	  }
+class test2 extends JFrame {
+
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
 		// ウィンドウの作成およびタイトルの設定
@@ -109,8 +106,6 @@ class test extends JFrame {
 	    });
 	    System.out.print("前面固定 Win + Ctrl + T");
 	    // https://www.tohoho-web.com/java/swing.htm
-	   
-
 
 
 	    // ボタンをウィンドウに追加する
@@ -121,6 +116,7 @@ class test extends JFrame {
 	    //frame.add(button5);
 	    
 	    frame.setVisible(true);
+	    
 	}
 
 }

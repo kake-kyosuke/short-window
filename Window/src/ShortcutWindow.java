@@ -1,4 +1,4 @@
-﻿import java.awt.Desktop;
+import java.awt.Desktop;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.net.URI;
@@ -7,11 +7,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
-class test extends JFrame {
-	  test(String title){
-		    ImageIcon icon = new ImageIcon("./src/img/icon.jpg");
-		    setIconImage(icon.getImage());
-	  }
+class ShortcutWindow extends JFrame {
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
 		// ウィンドウの作成およびタイトルの設定
@@ -31,7 +27,7 @@ class test extends JFrame {
 	    frame.setLayout(new FlowLayout());
 	    
 	    // ボタン1を作成 アイコン絶対パス
-	    ImageIcon icon1 = new ImageIcon("./src/img/YoutubeIcon.png");
+	    ImageIcon icon1 = new ImageIcon("./img/YoutubeIcon.png");
 	    JButton button1 = new JButton(icon1);
 	    //ボタンサイズ
 	    button1.setPreferredSize(new Dimension(100, 50));
@@ -50,7 +46,7 @@ class test extends JFrame {
 	      
 	    });
 	    // ボタン2を作成
-	    ImageIcon icon2 = new ImageIcon("./src/img/Google.png");
+	    ImageIcon icon2 = new ImageIcon("./img/Google.png");
 	    JButton button2 = new JButton(icon2);
 	    //ボタンサイズ
 	    button2.setPreferredSize(new Dimension(100, 50));
@@ -65,7 +61,7 @@ class test extends JFrame {
 	    		}
 	    });
 	    // ボタン3を作成
-	    ImageIcon icon3 = new ImageIcon("./src/img/NetflixIcon.png");
+	    ImageIcon icon3 = new ImageIcon("./img/NetflixIcon.png");
 	    JButton button3 = new JButton(icon3);
 	    //ボタンサイズ
 	    button3.setPreferredSize(new Dimension(100, 50));
@@ -96,7 +92,7 @@ class test extends JFrame {
 //	    });
 	    
 	     //ボタン4を作成  exec使用。アプリ開けるようになったらいいな
-	    ImageIcon icon4 = new ImageIcon("./src/img/YoutubeIcon.png"); //直下
+	    ImageIcon icon4 = new ImageIcon("./img/TwitchIcon.png"); //直下
 	    JButton button4 = new JButton(icon4);
 	    button4.addActionListener(e -> {
 	    	 String filename = "\"C:\\Users\\user03\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\"";
